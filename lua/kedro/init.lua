@@ -53,4 +53,6 @@ function M.setup()
 	)
 end
 
+print("Hello, from Kedro!")
+
 return M
