@@ -44,9 +44,10 @@ end
 
 -- Keybinding function
 function M.setup()
+	-- Using `<leader>kd` as a keymap
 	vim.api.nvim_set_keymap(
 		"n",
-		"<leader>}",
+		"<leader>kd",
 		':lua require("kedro_plugin.kedro").open_data_catalog()<CR>',
 		{ noremap = true, silent = true }
 	)
