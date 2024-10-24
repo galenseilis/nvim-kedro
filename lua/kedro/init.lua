@@ -46,7 +46,7 @@ end
 function M.setup()
 	vim.api.nvim_set_keymap(
 		"n",
-		"<leader>gk",
+		"<leader>}",
 		':lua require("kedro_plugin.kedro").open_data_catalog()<CR>',
 		{ noremap = true, silent = true }
 	)
