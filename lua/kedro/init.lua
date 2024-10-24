@@ -44,15 +44,8 @@ end
 
 -- Keybinding function
 function M.setup()
-	-- Using `<leader>kd` as a keymap
-	vim.api.nvim_set_keymap(
-		"n",
-		"<leader>kd",
-		':lua require("kedro").open_data_catalog()<CR>',
-		{ noremap = true, silent = true }
-	)
+	-- Use :lua to explicitly call the function
+	vim.api.nvim_set_keymap("n", "<leader>kd", ":lua open_data_catalog()<CR>", { noremap = true, silent = true })
 end
-
-print("Hello, from Kedro!")
 
 return M
